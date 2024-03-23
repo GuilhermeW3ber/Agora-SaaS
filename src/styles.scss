@@ -1,8 +1,235 @@
+@import url('https://fonts.cdnfonts.com/css/caviar-dreams');
+
+*{
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+	margin: 0;
+	font-weight: 800;
+  transition: all 200ms linear;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+  background-color: #c5c5c5;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid transparent;  /* creates padding around scroll thumb */
+}
+
+::selection {
+	color: #fff;
+	background-color: #7F7F7F;
+}
+
+::-moz-selection {
+	color: #fff;
+	background-color: #7F7F7F;
+}
+
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+.sideNav {
+  background-color: #333547;
+  height: 100%;
+  position: fixed;
+  width: 210px;
+  margin-top: -60px;
+}
+
+/* HEADER STYLE */
+.sideNav-header {
+  height: 40px;
+  padding: 15px;
+
+  margin-bottom: 26px;
+}
+.sideNav-header:hover {
+  background-color: #2b2d3c;
+}
+
+.sideNav-header-settings {
+  display: inline-block;
+  vertical-align: top;
+}
+.sideNav-header-settings-icon {
+    color: #b7b7b9;
+    width: 16px !important;
+    height: 16px !important;
+    margin-left: 5px;
+    margin-top: 2px;
+    display: inline-block;
+}
+.sideNav-header-title {
+  display: inline-block;
+  height: 100%;
+  line-height: 1.3;
+}
+.sideNav-header-title-team {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fafafa;
+  max-width: 158px;
+  display: inline-block;
+}
+.sideNav-header-title-user {
+  font-size: 15px;
+  font-weight: 500;
+  color: #c3c4c8;
+  max-width: 158px;
+}
+
+/* ENVIRONMENT STYLE */
+.sideNav-env {
+  position: relative;
+}
+.sideNav-env .sideNav-env-marker {
+  display: block;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 5px;
+  color: white;
+}
+.sideNav-env .sideNav-env-marker.dev {
+  background: #49ca99;
+}
+.sideNav-env .sideNav-env-marker.dev:after {
+  content: "Teste";
+}
+
+/*CLOCK STYLE*/
+.sideNav .sideNav-clock {
+    position: absolute;
+    bottom: 47px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: calc(100% - 20px);
+    padding: 15px 0;
+    margin: 0 10px;
+}
+.clock-container {
+    display: block;
+    padding-left: 30px;
+}
+.sideNav .sideNav-clock.clickable .clock-container {
+    cursor: pointer;
+}
+.clock-container .clock {
+    color: white;
+    font-weight: 700;
+}
+.clock-container .clock .icon {
+    width: 20px !important;
+    height: 20px !important;
+    fill: white;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+.clock-container .clock .date-time {
+    display: inline-block;
+}
+.clock-container .clock .date-time .time {
+  font-size: 20px
+}
+.clock-container .clock .date-time .date {
+    font-size: 16px;
+}
+
+/* CONTAINERS STYLE */
+.sideNav-tab-container {
+  display:block;
+}
+.sideNav-tab-container:hover {
+  cursor: default;
+  background-color: #333547;
+  filter: brightness(110%);
+}
+.sideNav-tab-title {
+  color: #b7b7b9;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15.5px;
+  line-height: 2.35;
+  width: 147px;
+  height: 40px;
+}
+.sideNav-tab-title:hover {
+  color: #c3c4c8;
+}
+
+.sideNav-tab-container.is-active
+{
+  background-color: #2b2d3c;
+  -webkit-box-shadow: 8px 0px 0px 0px #49ca99 inset;
+  box-shadow: 8px 0px 0px 0px #49ca99 inset;
+  height: auto;
+  display: block;
+}
+
+/* TAB ICONS STYLE */
+.sideNav-tab-icon-container {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 11px;
+  width: 37px;
+}
+.sideNav-tab-icon--dashboard {
+  color: #636268;
+  float: right;
+  padding-right: 6px;
+  width: 15px !important;
+}
+
+/* DROPDOWN */
+.sideNav-tab .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropBtn {
+  margin-top: 10px;
+  float:right;
+}
+.dropBtn:hover {
+  cursor:pointer;
+}
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #393a4c;
+  width: 100%;
+  box-shadow: inset 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  padding-left:39px;
+}
+
+.dropdown a:hover {
+  color:#f6f7f8;
+}
+.open {
+  display: block;
+}
+
