@@ -16,6 +16,9 @@ export default {
 
 <template>
   <div class="container">
+    <div class="bussines-image">
+      <img src="../../assets/logo.png" alt="">
+    </div>
     <div class="input-container">
         <h1 id="title">Bem vindo ao flow</h1>
         <h2 id="sub-title">Entre com sua conta.</h2>
