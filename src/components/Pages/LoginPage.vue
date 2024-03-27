@@ -22,10 +22,15 @@ export default {
     <div class="input-container">
         <h1 id="title">Bem vindo ao flow</h1>
         <h2 id="sub-title">Entre com sua conta.</h2>
-        <h2 id="input-name">E-Mail</h2>
-        <input type="text" background-image=""  placeholder="Seu E-Mail">
-        <h2>Senha</h2>
+        <div class="input">
+          <h2 id="input-name">E-Mail</h2>
+          <input type="text" background-image=""  placeholder="Seu E-Mail">
+        </div>
+        <div class="input">
+          <h2>Senha</h2>
         <input type="text" placeholder="Sua Senha">
+        <a href="" id="input-describe">Esqueceu sua senha?</a>
+        </div>
         <div class="login-container">
           <div class="button-container">
             <a id="submit-button" href="">

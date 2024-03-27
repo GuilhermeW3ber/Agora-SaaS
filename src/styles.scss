@@ -45,7 +45,6 @@ body::-webkit-scrollbar-thumb {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff;
-  margin-top: 60px;
 }
 
 .sideNav {
@@ -53,7 +52,6 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   position: fixed;
   width: 210px;
-  margin-top: -60px;
 }
 
 /* HEADER STYLE */
@@ -259,7 +257,6 @@ body::-webkit-scrollbar-thumb {
 
 .container{
   width: 100%;
-  height: 90vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -268,9 +265,11 @@ body::-webkit-scrollbar-thumb {
   width: 50vw;
   height: 100vh;
   background: rgb(1,1,1);
-background: linear-gradient(356deg, rgba(1,1,1,1) 0%, rgba(33,35,39,1) 100%);
-  margin-top: -7vh;
-  padding-top: 25vh;
+  background: linear-gradient(356deg, rgba(1,1,1,1) 0%, rgba(33,35,39,1) 100%);
+}
+
+.bussines-image img{
+  padding-top: 35vh;
 }
 
 #title{
@@ -291,14 +290,15 @@ background: linear-gradient(356deg, rgba(1,1,1,1) 0%, rgba(33,35,39,1) 100%);
 .input-container{
   align-items: center;
   justify-content: center;
-  padding: 15vh 21vw 0 4vw;
+  padding: 25vh 0 0 40px;
+  width: 400px;
 }
 
 input{
   width: 400px;
   height: 40px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   outline: 2px solid #C0C0C0;
   background-color: #212327;
   border: none;
@@ -336,7 +336,7 @@ input:focus{
 }
 
 .login-container{
-  margin-top: 20px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 80%;
@@ -371,4 +371,13 @@ input:focus{
 
 .button-container a{
   color: #212327;
+}
+
+.input{
+  text-align: start;
+}
+
+.input a{
+  color: #18C7FE;
+  font-weight: 300;
 }
