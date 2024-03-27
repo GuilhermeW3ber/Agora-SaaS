@@ -1,15 +1,18 @@
 @import url('https://fonts.cdnfonts.com/css/caviar-dreams');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 *{
   scroll-behavior: smooth;
   list-style: none;
   text-decoration: none;
+  font-family: "Inter", sans-serif;
 }
 
 body {
 	margin: 0;
 	font-weight: 800;
   transition: all 200ms linear;
+  background-color: #212327;
 }
 
 body::-webkit-scrollbar {
@@ -41,7 +44,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #fff;
   margin-top: 60px;
 }
 
@@ -60,6 +63,7 @@ body::-webkit-scrollbar-thumb {
 
   margin-bottom: 26px;
 }
+
 .sideNav-header:hover {
   background-color: #2b2d3c;
 }
@@ -68,19 +72,22 @@ body::-webkit-scrollbar-thumb {
   display: inline-block;
   vertical-align: top;
 }
+
 .sideNav-header-settings-icon {
-    color: #b7b7b9;
-    width: 16px !important;
-    height: 16px !important;
-    margin-left: 5px;
-    margin-top: 2px;
-    display: inline-block;
+  color: #b7b7b9;
+  width: 16px !important;
+  height: 16px !important;
+  margin-left: 5px;
+  margin-top: 2px;
+  display: inline-block;
 }
+
 .sideNav-header-title {
   display: inline-block;
   height: 100%;
   line-height: 1.3;
 }
+
 .sideNav-header-title-team {
   font-size: 18px;
   font-weight: 700;
@@ -88,6 +95,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 158px;
   display: inline-block;
 }
+
 .sideNav-header-title-user {
   font-size: 15px;
   font-weight: 500;
@@ -99,6 +107,7 @@ body::-webkit-scrollbar-thumb {
 .sideNav-env {
   position: relative;
 }
+
 .sideNav-env .sideNav-env-marker {
   display: block;
   position: absolute;
@@ -110,9 +119,11 @@ body::-webkit-scrollbar-thumb {
   padding: 5px;
   color: white;
 }
+
 .sideNav-env .sideNav-env-marker.dev {
   background: #49ca99;
 }
+
 .sideNav-env .sideNav-env-marker.dev:after {
   content: "Teste";
 }
@@ -127,17 +138,21 @@ body::-webkit-scrollbar-thumb {
     padding: 15px 0;
     margin: 0 10px;
 }
+
 .clock-container {
     display: block;
     padding-left: 30px;
 }
+
 .sideNav .sideNav-clock.clickable .clock-container {
     cursor: pointer;
 }
+
 .clock-container .clock {
     color: white;
     font-weight: 700;
 }
+
 .clock-container .clock .icon {
     width: 20px !important;
     height: 20px !important;
@@ -146,12 +161,15 @@ body::-webkit-scrollbar-thumb {
     margin-right: 10px;
     margin-top: 2px;
 }
+
 .clock-container .clock .date-time {
     display: inline-block;
 }
+
 .clock-container .clock .date-time .time {
   font-size: 20px
 }
+
 .clock-container .clock .date-time .date {
     font-size: 16px;
 }
@@ -160,11 +178,13 @@ body::-webkit-scrollbar-thumb {
 .sideNav-tab-container {
   display:block;
 }
+
 .sideNav-tab-container:hover {
   cursor: default;
   background-color: #333547;
   filter: brightness(110%);
 }
+
 .sideNav-tab-title {
   color: #b7b7b9;
   display: inline-block;
@@ -178,8 +198,7 @@ body::-webkit-scrollbar-thumb {
   color: #c3c4c8;
 }
 
-.sideNav-tab-container.is-active
-{
+.sideNav-tab-container.is-active{
   background-color: #2b2d3c;
   -webkit-box-shadow: 8px 0px 0px 0px #49ca99 inset;
   box-shadow: 8px 0px 0px 0px #49ca99 inset;
@@ -194,6 +213,7 @@ body::-webkit-scrollbar-thumb {
   padding-top: 11px;
   width: 37px;
 }
+
 .sideNav-tab-icon--dashboard {
   color: #636268;
   float: right;
@@ -211,9 +231,11 @@ body::-webkit-scrollbar-thumb {
   margin-top: 10px;
   float:right;
 }
+
 .dropBtn:hover {
   cursor:pointer;
 }
+
 .dropdown-content {
   display: none;
   position: relative;
@@ -222,6 +244,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: inset 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 .dropdown-content a {
   padding-left:39px;
 }
@@ -229,7 +252,113 @@ body::-webkit-scrollbar-thumb {
 .dropdown a:hover {
   color:#f6f7f8;
 }
+
 .open {
   display: block;
 }
 
+.container{
+  width: 100%;
+  height: 100vh;
+}
+
+#title{
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+#sub-title{
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.input-container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 25vw;
+}
+
+input{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: 2px solid #C0C0C0;
+  background-color: #212327;
+  border: none;
+  transition: 0.25s ease-in-out;
+}
+
+input::placeholder {
+  font-weight: 500;
+  font-size: 1em;
+  padding: 10px;
+  color: #C0C0C0;
+}
+
+input:focus{
+  outline: 2px solid #18C7FE;
+}
+
+.button-container a p{
+  margin: 9px;
+  font-weight: 600;
+}
+
+.input-container h2{
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: start;
+}
+
+#input-name{
+  font-weight: 500;
+}
+
+#submit-button{
+  margin-top: 20px;
+}
+
+.login-container{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+}
+
+.login-text-container{
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: -12px;
+}
+
+.login-text-container h3{
+  color: #C0C0C0;
+  font-weight: 400;
+}
+
+.login-text-container h3 a{
+  color: #18C7FE;
+  font-weight: 400;
+}
+
+.button-container{
+  background: #18c7fe;
+  border-radius: 5px;
+  color: #212327;
+  padding:5px;
+  width: 90%;
+  height: 40px;
+}
+
+.button-container a{
+  color: #212327;
+}
