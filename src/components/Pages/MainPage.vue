@@ -1,11 +1,11 @@
 <script>
 
-// import NavbarMenu from '../Navbar/NavbarMenu.vue'
+import NavbarMenu from '../Navbar/NavbarMenu.vue'
 
 export default {
-  name: 'LoginPage',
+  name: 'MainPage',
   components: {
-    // NavbarMenu,
+    NavbarMenu,
   },
   props: {
     msg: String
@@ -16,7 +16,8 @@ export default {
 
 <template>
   <div class="container">
-    <div class="bussines-image">
+    <NavbarMenu/>
+    <!-- <div class="bussines-image">
       <img src="../../assets/logo.png" alt="">
     </div>
     <div class="input-container">
@@ -33,7 +34,7 @@ export default {
         </div>
         <div class="login-container">
           <div class="button-container">
-            <a id="submit-button" href="./MainPage.vue">
+            <a id="submit-button" href="">
               <p>Entrar</p>
             </a>
           </div>
@@ -41,7 +42,7 @@ export default {
             <h3>Não tem uma conta? <a href="">Cadastre-se.</a></h3>
           </div>
         </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
