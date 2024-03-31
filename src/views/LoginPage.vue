@@ -33,12 +33,12 @@ export default {
         </div>
         <div class="login-container">
           <div class="button-container">
-            <a id="submit-button" href="./MainPage.vue">
-              <p>Entrar</p>
-            </a>
+              <a id="submit-button" href="/main">
+                <p>Entrar</p>
+              </a>
           </div>
           <div class="login-text-container">
-            <h3>Não tem uma conta? <a href=""><router-link to="/main">Cadastre-se.</router-link></a></h3>
+            <h3>Não tem uma conta? <a href="/main">Cadastre-se.</a></h3>
           </div>
         </div>
     </div>

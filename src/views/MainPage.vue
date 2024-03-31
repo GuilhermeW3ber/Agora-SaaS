@@ -17,8 +17,8 @@ export default {
 <template>
   <div class="container">
     <NavbarMenu/>
-    <!-- <div class="bussines-image">
-      <img src="../../assets/logo.png" alt="">
+    <div class="bussines-image">
+      <img src="../assets/logo.png" alt="">
     </div>
     <div class="input-container">
         <h1 id="title">Bem vindo ao flow</h1>
@@ -42,10 +42,10 @@ export default {
             <h3>Não tem uma conta? <a href="">Cadastre-se.</a></h3>
           </div>
         </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
 <style>
-  @import '../../styles.scss';
+  @import '../styles.scss';
 </style>
