@@ -1,6 +1,6 @@
 <script>
 
-import NavbarMenu from './Navbar/NavbarMenu.vue'
+import NavbarMenu from './navbar/NavbarMenu.vue'
 
 export default {
   name: 'HomePage',

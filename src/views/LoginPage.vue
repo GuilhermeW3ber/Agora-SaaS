@@ -17,7 +17,7 @@ export default {
 <template>
   <div class="container">
     <div class="bussines-image">
-      <img src="../../assets/logo.png" alt="">
+      <img src="../assets/logo.png" alt="">
     </div>
     <div class="input-container">
         <h1 id="title">Bem vindo ao flow</h1>
@@ -38,7 +38,7 @@ export default {
             </a>
           </div>
           <div class="login-text-container">
-            <h3>Não tem uma conta? <a href="">Cadastre-se.</a></h3>
+            <h3>Não tem uma conta? <a href=""><router-link to="/main">Cadastre-se.</router-link></a></h3>
           </div>
         </div>
     </div>
@@ -46,5 +46,5 @@ export default {
 </template>
 
 <style>
-  @import '../../styles.scss';
+  @import '../styles.scss';
 </style>

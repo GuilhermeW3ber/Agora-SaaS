@@ -1,24 +1,25 @@
-<script>
-  // import HomePage from './components/HomePage.vue'
-  import LoginPage from './components/Pages/LoginPage.vue';
-
-
-  export default {
-    name: 'App',
-    components: {
-      // HomePage,
-      LoginPage,
-    }
-  }
-</script>
-
 <template>
   <div>
-    <!-- <HomePage msg="Welcome to Your Vue.js App"/> -->
-    <LoginPage/>
+    <!-- <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav> -->
+    <router-view/>
   </div>
 </template>
 
 <style>
-  @import './styles.scss';
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>
